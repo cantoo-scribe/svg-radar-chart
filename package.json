@@ -1,51 +1,57 @@
 {
-	"name": "svg-radar-chart",
-	"description": "A reusable radar chart in SVG.",
-	"version": "1.0.0",
-	"type": "module",
-	"main": "index.js",
-	"files": [
-		"index.js",
-		"smoothing.js"
-	],
-	"keywords": [
-		"svg",
-		"radar",
-		"chart",
-		"dataviz",
-		"visualization"
-	],
-	"author": "Jannis R <mail@jannisr.de>",
-	"homepage": "http://derhuerst.github.io/svg-radar-chart/",
-	"repository": "derhuerst/svg-radar-chart",
-	"bugs": "https://github.com/derhuerst/svg-radar-chart/issues",
-	"license": "ISC",
-	"engines": {
-		"node": ">=20"
-	},
-	"dependencies": {
-		"d3-shape": "^1.0.3",
-		"virtual-dom": "^2.1.1"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.23.9",
-		"@babel/preset-env": "^7.23.9",
-		"babelify": "^10.0.0",
-		"browserify": "^17.0.0",
-		"envify": "^4.1.0",
-		"eslint": "^8.56.0",
-		"safe-eval": "^0.4.1",
-		"uglify-es": "^3.3.9",
-		"virtual-dom-stringify": "^3.0.1",
-		"@types/d3-shape": "^1.0.3",
-		"@types/virtual-dom": "^2.1.1",
-		"@types/react": "^18.3.2"
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"docs-build": "env NODE_ENV=production browserify -g [ babelify --presets [ @babel/preset-env ] ] -g envify docs/index.js | uglifyjs -mc -o docs/bundle.min.js",
-		"docs-dev": "env NODE_ENV=dev browserify docs/index.js > docs/bundle.min.js",
-		"build": "npm run docs-build",
-		"prepublishOnly": "npm run lint"
-	}
+  "name": "@cantoo/svg-radar-chart",
+  "description": "A reusable radar chart in SVG.",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "smoothing.js"
+  ],
+  "keywords": [
+    "svg",
+    "radar",
+    "chart",
+    "dataviz",
+    "visualization"
+  ],
+  "author": "Jannis R <mail@jannisr.de>",
+  "contributors": [
+    "Cantoo <contact@cantoo.fr>"
+  ],
+  "homepage": "http://derhuerst.github.io/svg-radar-chart/",
+  "repository": "cantoo-scribe/svg-radar-chart",
+  "bugs": "https://github.com/cantoo-scribe/svg-radar-chart/issues",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "d3-shape": "^1.0.3",
+    "release-it": "^17.3.0",
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@types/d3-shape": "^1.0.3",
+    "@types/react": "^18.3.2",
+    "@types/virtual-dom": "^2.1.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "envify": "^4.1.0",
+    "eslint": "^8.56.0",
+    "safe-eval": "^0.4.1",
+    "uglify-es": "^3.3.9",
+    "virtual-dom-stringify": "^3.0.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "release": "npm run lint && npm run build && release-it",
+    "docs-build": "env NODE_ENV=production browserify -g [ babelify --presets [ @babel/preset-env ] ] -g envify docs/index.js | uglifyjs -mc -o docs/bundle.min.js",
+    "docs-dev": "env NODE_ENV=dev browserify docs/index.js > docs/bundle.min.js",
+    "build": "npm run docs-build",
+    "prepublishOnly": "npm run lint"
+  }
 }
