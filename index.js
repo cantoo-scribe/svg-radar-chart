@@ -225,4 +225,4 @@ export {
 	renderRadarChart as radar,
 };
 
-export * from './smoothing'
+export * from './smoothing.js'
