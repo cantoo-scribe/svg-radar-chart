@@ -6,7 +6,7 @@ import {line, curveCardinalClosed} from 'd3-shape'
 /**
  * Create a basic smoothing
  * @param {number} tension The tension of the smoothing
- * @returns {(points: import('./index').Points) => string | null | void}
+ * @returns {(points: import('./index').Points) => string}
  */
 const createAddSmoothing = (tension = .3) => (points) => {
 	return line().curve(curveCardinalClosed.tension(tension))(points)
