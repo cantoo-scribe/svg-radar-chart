@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "moduleResolution": "node",
+    "declaration": true,
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./types",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"],
+  "include": ["index.js", "smoothing.js"]
+}
