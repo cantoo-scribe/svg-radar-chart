@@ -9,5 +9,5 @@
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["index.js", "smoothing.js"]
+  "include": ["index.js"]
 }

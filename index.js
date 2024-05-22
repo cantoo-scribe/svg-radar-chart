@@ -224,3 +224,5 @@ const renderRadarChart = (columnsData, data, opt = {}) => {
 export {
 	renderRadarChart as radar,
 };
+
+export * from './smoothing'

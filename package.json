@@ -11,26 +11,6 @@
     "smoothing.js",
     "types/*.d.ts"
   ],
-  "exports": {
-    ".": {
-      "import": "./index.js",
-      "types": "./types/index.d.ts"
-    },
-    "./smoothing": {
-      "import": "./smoothing.js",
-      "types": "./types/smoothing.d.ts"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      ".": [
-        "types/index.d.ts"
-      ],
-      "./smoothing": [
-        "types/smoothing.d.ts"
-      ]
-    }
-  },
   "keywords": [
     "svg",
     "radar",

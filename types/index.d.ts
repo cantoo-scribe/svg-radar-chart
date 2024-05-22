@@ -1,4 +1,5 @@
 export { renderRadarChart as radar };
+export * from "./smoothing";
 /**
  * Represents a point in 2D space as a tuple of two numbers [x, y].
  */
