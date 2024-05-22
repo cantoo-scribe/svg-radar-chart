@@ -5,6 +5,7 @@
   "type": "module",
   "private": false,
   "main": "index.js",
+  "types": "types/index.d.ts",
   "files": [
     "index.js",
     "smoothing.js",
