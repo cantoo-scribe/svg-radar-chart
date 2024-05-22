@@ -26,7 +26,7 @@
       ".": [
         "types/index.d.ts"
       ],
-      "./*": [
+      "./smoothing": [
         "types/smoothing.d.ts"
       ]
     }
