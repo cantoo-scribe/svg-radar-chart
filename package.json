@@ -1,7 +1,7 @@
 {
   "name": "@cantoo/svg-radar-chart",
   "description": "A reusable radar chart in SVG.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "private": false,
   "main": "index.js",
