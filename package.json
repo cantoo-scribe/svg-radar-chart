@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "d3-shape": "^1.0.3",
-    "release-it": "^17.3.0",
     "virtual-dom": "^2.1.1"
   },
   "devDependencies": {
@@ -42,6 +41,7 @@
     "browserify": "^17.0.0",
     "envify": "^4.1.0",
     "eslint": "^8.56.0",
+    "release-it": "^17.3.0",
     "safe-eval": "^0.4.1",
     "uglify-es": "^3.3.9",
     "virtual-dom-stringify": "^3.0.1"
